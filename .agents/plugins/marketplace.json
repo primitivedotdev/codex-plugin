@@ -1,0 +1,12 @@
+{
+  "name": "primitive",
+  "interface": {
+    "displayName": "Primitive"
+  },
+  "plugins": [
+    {
+      "name": "primitive",
+      "source": "./plugins/primitive"
+    }
+  ]
+}
