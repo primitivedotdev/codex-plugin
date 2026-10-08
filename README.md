@@ -29,6 +29,13 @@ This repository is only the marketplace. Its one entry points at
 manifest, `skills/` holds the skills and `mcp.json` declares the MCP servers.
 A skill added or changed there reaches Codex without a change here.
 
+The entry also carries the plugin's display name, descriptions and brand colour,
+so the Codex app has something to show before the plugin is installed. Codex
+ignores icon paths on an entry whose plugin lives in another repository, so the
+icon appears only after install. To see the icon before install, add the skills
+repository as the marketplace instead:
+`codex plugin marketplace add primitivedotdev/skills`.
+
 ```
 .agents/plugins/marketplace.json   # marketplace manifest, read by `codex plugin marketplace add`
 ```
